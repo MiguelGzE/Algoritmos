@@ -1,1 +1,44 @@
 # Suma
+González Espejel Miguel Angel-
+Diseño y análisis de algoritmos 2508.
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Suma</title>
+    <script>
+
+        function Sumatoria(n1,n2) {                        
+            var n1 = document.getElementById('num1').value;
+            var n2 = document.getElementById('num2').value;
+            var suma = parseInt(n1) + parseInt(n2);  
+
+            if (n1 >0 && n1 <100 && n2 >0 && n2 <100) {    
+            alert("El resultado de la suma es: " + suma);
+            }else if (n1 <=0 | n1 >=100) {
+                alert("Introduce en el primer número un valor mayor a 0 y menor a 100")
+            }else if (n2 <=0 | n2 >=100) {
+                alert("Introduce en el segundo número, un valor mayor a 0 y menor a 100")  
+            }else{
+                alert('Introduce sólo números')
+            }       
+        }
+
+    </script>        
+    </head>
+
+    <body>
+    <fieldset align="center">
+        <legend><h2>Ingrese dos números</h2></legend>
+        <h3>Los números deben ser mayores a 0 y menores a 100</h3>
+            <label>Primer número:</label>
+            <input type="text" id="num1">
+            <br><br>
+            <label>Segundo número:</label>
+            <input type="text" id="num2">
+            <br><br>
+        <input type="button" onclick="Sumatoria();" value="Suma">
+    </fieldset>
+    </body>
+
+</html>
