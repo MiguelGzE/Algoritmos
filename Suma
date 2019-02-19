@@ -40,5 +40,4 @@ Diseño y análisis de algoritmos 2508.
         <input type="button" onclick="Sumatoria();" value="Suma">
     </fieldset>
     </body>
-
 </html>
