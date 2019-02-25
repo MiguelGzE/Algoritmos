@@ -1,0 +1,46 @@
+# Suma arreglo
+González Espejel Miguel Angel
+Diseño y análisis de algoritmos 2508.
+
+<?php
+$numbers = array
+  (
+  array(0,2),
+  array(2,6),
+  array(4,8),
+  array(8,7),
+  array(3,9),
+  array(33,180)
+  );
+
+$longitud = count($numbers); 
+
+	echo 'Arreglo original:'.'<br>';  
+  	for ($i=0; $i < $longitud ; $i++) { 
+  		echo '['.$numbers[$i][0].' , '.$numbers[$i][1].']'.'<br>';
+  	}
+
+	function suma($a,$b){
+	 if($a > 100 || $b > 100) { 
+	 	echo 'Ningún número debe ser mayor a 100.';  
+		}else{	
+		return  $a + $b;
+		}
+	}  
+
+	echo '<br>'.'Suma:'.'<br>';  
+ 	for ($j=0; $j < $longitud; $j++) {
+ 		$a = $numbers[$j][0];
+ 		$b = $numbers[$j][1]; 
+  		$resultado = suma($a,$b);
+
+		if($a < 100 && $b < 100) {
+	  	echo '['.$resultado.'] ';
+	  	if ($resultado%2 == 0) {
+	  		echo 'Es número par.'.'<br>';
+	  	}else{
+	  		echo 'Es número impar.'.'<br>';
+	  		}
+  		}
+  	}	
+?>
