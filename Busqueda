@@ -25,10 +25,8 @@ array = [1,15,25,8];
 console.log(array)
 
 resultado = busqueda(array,num);
-if(resultado == -1)
-	console.log(resultado)
-else
-	console.log(resultado)
+console.log(resultado)
+
 
 
 
