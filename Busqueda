@@ -1,0 +1,34 @@
+
+Algoritmo que busca un elemento dentro de una lista.
+González Espejel Miguel Angel
+Diseño y análisis de algoritmos 2508.
+
+function busqueda(array,num){
+var indice = 0;
+var longitud = array.length;
+var resultado = 0;
+
+	for (var i = 0; i < longitud; i++) {
+		if (array[i] == num){ 
+			resultado = 'El número ' + num + ' se encuentra en la posición: ' + indice;
+			return resultado;
+		}
+		else 
+			indice++
+	}
+	resultado = 'El número ' + num + ' no se encuentra en el arreglo';
+	return resultado
+}
+
+num = Math.round(Math.random()*30);
+array = [1,15,25,8];
+console.log(array)
+
+resultado = busqueda(array,num);
+if(resultado == -1)
+	console.log(resultado)
+else
+	console.log(resultado)
+
+
+
