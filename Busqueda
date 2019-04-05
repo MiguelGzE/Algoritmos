@@ -9,14 +9,14 @@ var longitud = array.length;
 var resultado = 0;
 
 	for (var i = 0; i < longitud; i++) {
-		if (array[i] == num){ 
-			resultado = 'El número ' + num + ' se encuentra en la posición: ' + indice;
-			return resultado;
-		}
-		else 
-			indice++
+            if (array[i] == num){ 
+		resultado = 'El número ' + num + ' se encuentra en la posición: ' + indice;
+		return resultado;
+	    }
+            else 
+		indice++
 	}
-	resultado = 'El número ' + num + ' no se encuentra en el arreglo';
+        resultado = 'El número ' + num + ' no se encuentra en el arreglo';
 	return resultado
 }
 
